@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 function Navbar() {
+  //sample
     {/* used to track current pathname */}
     const pathname = usePathname(); 
     {/* 
