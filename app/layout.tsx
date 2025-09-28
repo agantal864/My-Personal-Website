@@ -5,6 +5,8 @@ import "./globals.css";
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Particles from '@/components/bg';
+
 
 const butler = localFont({
   src: [
@@ -64,13 +66,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${butler.variable}`}>
-      <body>
-         <div className="flex flex-col min-h-screen">
-        <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-        <Footer />
+      <body className="relative">
+        <div className="fixed inset-0 -z-10">
+          <Particles
+            particleColors={['#FFC107/40']}
+            particleCount={200}
+            particleSpread={10}
+            speed={0.2}
+            particleBaseSize={150}
+            moveParticlesOnHover={true}
+            alphaParticles={true}
+            disableRotation={false}
+          />
+        </div>
+         <div className="relative flex flex-col min-h-screen">
+          <Navbar />
+            <main className="flex-grow">
+              {children}
+            </main>
+          <Footer />
         </div>
       </body>
     </html>
