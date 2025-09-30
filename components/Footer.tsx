@@ -6,7 +6,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 function Footer() {
   return (
     <footer className="bg-[#f5f5f5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-10 md:px-12 lg:px-20">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 pt-10 pb-5">
             {/* Left Section */}
             <div className="font-medium space-y-10 md:space-y-20">

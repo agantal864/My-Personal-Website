@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
-    "@prisma/client": "^6.16.2",
     "gsap": "^3.13.0",
     "next": "15.5.4",
     "ogl": "^1.0.11",
@@ -26,7 +25,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
-    "prisma": "^6.16.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

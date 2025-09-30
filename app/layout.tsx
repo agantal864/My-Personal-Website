@@ -1,12 +1,11 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-import "./globals.css";
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Particles from '@/components/bg';
-
+import Particles from '@/components/ui/bg';
 
 const butler = localFont({
   src: [
@@ -56,7 +55,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Azis Agantal | My Portfolio",
-  description: "Aspiring Software Engineer, Recent ECE graduate",
+  description: "My personal portfolio website showcasing my projects and skills.",
 };
 
 export default function RootLayout({

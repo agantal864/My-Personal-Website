@@ -15,7 +15,7 @@ function Navbar() {
 
     const navItems = [
       { label: 'HOME', href: '/' },
-      { label: 'PROJECTS', href: '/projects' },
+      { label: 'PROJECTS', href: '/projects', match: ['/projects', '/m2m', '/pid', '/iot', '/oldweb', '/curweb', '/sis'] },
       { label: 'ABOUT', href: '/about' },
       { label: 'BLOG', href: '/blog' },
       { label: 'CONTACT', href: '/contact' },
@@ -24,7 +24,7 @@ function Navbar() {
     return (
       <nav className="top-0 z-50 backdrop:blur-xl">
         {/* Logo and navigation box */}
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12'>
+        <div className='max-w-7xl mx-auto px-10 md:px-12 lg:px-20'>
           <div className="flex items-center justify-between py-5">
             
             <Link href="/">
@@ -50,8 +50,8 @@ function Navbar() {
             {/* Desktop nav only */}
             <div className="hidden md:flex md:flex-row md:rounded-full md:text-sm lg:text-base md:space-x-0.5 md:px-3 md:py-2 lg:space-x-1 lg:px-6 lg:py-2.5 bg-[#f5f5f5] font-normal"
               style={{ boxShadow: '1px 1px 1px 1px rgba(0, 0, 0, 0.25)' }}>
-              {navItems.map(({ label, href }) => {
-                const isActive = pathname === href;
+              {navItems.map(({ label, href, match }) => {
+                const isActive = pathname === href || match?.includes(pathname);
                 return (
                   <Link
                     key={href}
@@ -88,8 +88,8 @@ function Navbar() {
               <div className="flex flex-col items-start space-y-4 px-6 py-4 mt-2 rounded-lg bg-[#f5f5f5] font-normal md:hidden transition-all duration-300 ease-in-out"
                 style={{ boxShadow: '1px 1px 1px 1px rgba(0, 0, 0, 0.25)' }}
               >
-                {navItems.map(({ label, href }) => {
-                  const isActive = pathname === href;
+                {navItems.map(({ label, href, match }) => {
+                  const isActive = pathname === href || match?.includes(pathname);
                   return (
                     <Link
                       key={href}
