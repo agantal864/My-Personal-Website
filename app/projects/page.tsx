@@ -8,7 +8,7 @@ function Projects() {
             <div className="flex w-full justify-center items-center">
                 <div className="grid h-[2000px] md:h-[1500px] w-full grid-cols-1 md:grid-cols-10 md:grid-rows-18 gap-6">   
                     <div className="group h-[300px] md:h-auto relative md:col-span-6 md:row-span-5 bento-hover">
-                        <Link href="/m2m" className="absolute inset-0 z-10"/>
+                        <Link href="/projects/m2m" className="absolute inset-0 z-10"/>
                         <div className="bg-[url('/projectpage/remote.png')] bg-cover bg-center rounded-4xl flex justify-between items-start h-full relative z-0" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>
                             <div className="pl-6 pt-6 md:pl-8 md:pt-8">
                                 <h3 className="font-serif text-[#1A2B4C] font-bold text-xs lg:text-sm pb-1.5">REMOTE MONITORING</h3>
@@ -20,7 +20,7 @@ function Projects() {
                         </div>
                     </div>     
                     <div className="group h-[300px] md:h-auto relative md:col-span-4 md:row-span-9 bento-hover">
-                        <Link href="/pid" className="absolute inset-0 z-10"/>
+                        <Link href="/projects/pid" className="absolute inset-0 z-10"/>
                         <div className="bg-[url('/projectpage/robotics.png')] bg-cover bg-center rounded-4xl flex justify-between items-start h-full relative z-0" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>   
                             <div className="pl-6 pt-6 md:pl-8 md:pt-8">
                                 <h3 className="font-serif text-[#1A2B4C] font-bold text-xs lg:text-sm pb-1.5">ROBOTICS</h3>
@@ -32,7 +32,7 @@ function Projects() {
                         </div>
                     </div>   
                     <div className="group h-[300px] md:h-auto relative md:col-span-6 md:row-span-4 bento-hover">
-                            <Link href="/iot" className="absolute inset-0 z-10"/>
+                            <Link href="/projects/iot" className="absolute inset-0 z-10"/>
                             <div className="bg-[url('/projectpage/iot.png')] bg-cover bg-center rounded-4xl flex justify-between items-start h-full relative z-0" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>
                                 <div className="pl-6 pt-6 md:pl-8 md:pt-8">
                                     <h3 className="font-serif text-[#1A2B4C] font-bold text-xs lg:text-sm pb-1.5">IOT NETWORK</h3>
@@ -44,7 +44,7 @@ function Projects() {
                             </div>
                     </div>            
                     <div className="group h-[300px] md:h-auto relative md:col-span-4 md:row-span-5 bento-hover">
-                        <Link href="/oldweb" className="absolute inset-0 z-10"/>
+                        <Link href="/projects/oldweb" className="absolute inset-0 z-10"/>
                         <div className="bg-[url('/projectpage/webprev.png')] bg-cover bg-center rounded-4xl flex justify-between items-start h-full relative z-0" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>
                             <div className="pl-6 pt-6 md:pl-8 md:pt-8">
                                 <h3 className="font-serif text-[#1A2B4C] font-bold text-xs lg:text-sm pb-1.5">WEB DEVELOPMENT</h3>
@@ -56,7 +56,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="group h-[300px] md:h-auto relative md:col-span-6 md:row-span-5 bento-hover">
-                        <Link href="/curweb" className="absolute inset-0 z-10"/>
+                        <Link href="/projects/curweb" className="absolute inset-0 z-10"/>
                         <div className="bg-[url('/projectpage/webcur.png')] bg-cover bg-center rounded-4xl flex justify-between items-start h-full relative z-0" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>
                             <div className="pl-6 pt-6 md:pl-8 md:pt-8">
                                 <h3 className="font-serif text-[#1A2B4C] font-bold text-xs lg:text-sm pb-1.5">WEB DEVELOPMENT</h3>
@@ -68,7 +68,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="group relative h-[300px] md:h-auto md:col-span-10 md:row-span-4 bento-hover">
-                         <Link href="/sis" className="absolute inset-0 z-10"/>
+                         <Link href="/projects/sis" className="absolute inset-0 z-10"/>
                         <div className="bg-[url('/projectpage/prog.png')] bg-cover bg-center rounded-4xl flex justify-between items-start h-full relative z-0" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>
                             <div className="pl-6 pt-6 md:pl-8 md:pt-8">
                                 <h3 className="font-serif text-[#1A2B4C] font-bold text-xs lg:text-sm pb-1.5">PROGRAMMING</h3>

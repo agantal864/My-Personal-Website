@@ -15,7 +15,7 @@ function Navbar() {
 
     const navItems = [
       { label: 'HOME', href: '/' },
-      { label: 'PROJECTS', href: '/projects', match: ['/projects', '/m2m', '/pid', '/iot', '/oldweb', '/curweb', '/sis'] },
+      { label: 'PROJECTS', href: '/projects', match: ['/projects/m2m', '/projects/pid', '/projects/iot', '/projects/oldweb', '/projects/curweb', '/projects/sis'] },
       { label: 'ABOUT', href: '/about' },
       { label: 'BLOG', href: '/blog' },
       { label: 'CONTACT', href: '/contact' },
@@ -86,8 +86,7 @@ function Navbar() {
              {/* Mobile nav dropdown */}
             {isOpen && (
               <div className="flex flex-col items-start space-y-4 px-6 py-4 mt-2 rounded-lg bg-[#f5f5f5] font-normal md:hidden transition-all duration-300 ease-in-out"
-                style={{ boxShadow: '1px 1px 1px 1px rgba(0, 0, 0, 0.25)' }}
-              >
+              style={{ boxShadow: '1px 1px 1px 1px rgba(0, 0, 0, 0.25)' }}>
                 {navItems.map(({ label, href, match }) => {
                   const isActive = pathname === href || match?.includes(pathname);
                   return (
@@ -101,10 +100,9 @@ function Navbar() {
                       {label}
                     </Link>
                   );
-                })}
+              })}
               </div>
             )}
-        
         </div>
       </nav>
     )
