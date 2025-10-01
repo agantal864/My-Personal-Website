@@ -2,10 +2,11 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { Toaster } from 'react-hot-toast';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import Particles from '@/components/ui/bg';
+import Navbar from '@/app/components/common/Navbar';
+import Footer from '@/app/components/common/Footer';
+import Particles from '@/app/components/ui/bg';
 
 const butler = localFont({
   src: [
@@ -66,6 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${butler.variable}`}>
       <body className="relative">
+        <Toaster position="top-center" />
         <div className="fixed inset-0 -z-10">
           <Particles
             particleColors={['#FFC107/40']}

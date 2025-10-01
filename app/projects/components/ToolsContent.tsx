@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+interface ToolsContentProps {
+    children: React.ReactNode;
+}
+
 interface ToolItem {
     name: string
     src: string
@@ -13,7 +17,18 @@ interface ToolsItemsProps {
     items: ToolItem[]
 }
 
-function ToolItems({items}: ToolsItemsProps) {
+export function ToolsContent({children}: ToolsContentProps) {
+    return (
+        <>
+            <h2 className="font-sans text-[#1A2B4C] text-lg lg:text-xl font-semibold pb-6">Tools & Technologies</h2>
+            <div className="flex flex-wrap justify-start gap-4">
+                {children}
+            </div>
+        </>
+    )
+}
+
+export function ToolsItems({items}: ToolsItemsProps) {
     return (
         <>
             {items.map((tool, index) => (
@@ -33,8 +48,3 @@ function ToolItems({items}: ToolsItemsProps) {
         </> 
     )
 }
-
-export default ToolItems;
-
-
-

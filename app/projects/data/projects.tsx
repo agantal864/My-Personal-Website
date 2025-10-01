@@ -1,16 +1,25 @@
 export type ToolItem = {
-  name: string
-  src: string
-  alt: string
-  width: number
-  height: number
-  className: string
+    name: string
+    src: string
+    alt: string
+    width: number
+    height: number
+    className: string
 }
 
 export type Project = {
-  title: string
-  paragraphs: string[]
-  tools: ToolItem[]
+    title: string
+    paragraphs: string[]
+    tools: ToolItem[]
+}
+
+export interface BentoBoxProps {
+    col: number;
+    row: number;
+    slug: string
+    imagefile: string
+    title: string
+    description: React.ReactNode
 }
 
 const projects: Record<string, Project> = {
@@ -209,3 +218,89 @@ const projects: Record<string, Project> = {
 }
 
 export default projects
+
+const BentoList: BentoBoxProps[] = [
+  {
+    col: 6,
+    row: 5,
+    slug: 'm2m',
+    imagefile: 'remote.png',
+    title: 'REMOTE MONITORING',
+    description: (
+      <>
+        Design & Implementation <br />
+        of a oneM2M-based <br />
+        Remote Monitoring System
+      </>
+    ),
+  },
+  {
+    col: 4, 
+    row: 9,
+    slug: 'pid',
+    imagefile: 'robotics.png',
+    title: 'ROBOTICS',
+    description: (
+      <>
+        PID controlled <br />
+        Arduino Robot
+      </>
+    ),
+  },
+  {
+    col: 6,
+    row: 4,
+    slug: 'iot',
+    imagefile: 'iot.png',
+    title: 'ROBOTICS',
+    description: (
+      <>
+        Automated <br className="md:block lg:hidden xl:hidden" />
+        low-cost <br />
+        Room Theft <br />
+        Detection System
+      </>
+    ),
+  },
+  {
+    col: 4,
+    row: 5,
+    slug: 'oldweb',
+    imagefile: 'webprev.png',
+    title: 'WEB DEVELOPMENT',
+    description: (
+      <>
+        Old Personal <br />
+        Website
+      </>
+    ),
+  },
+  {
+    col: 6,
+    row: 5,
+    slug: 'curweb',
+    imagefile: 'webcur.png',
+    title: 'WEB DEVELOPMENT',
+    description: (
+      <>
+        Current Personal <br />
+        Website
+      </>
+    ),
+  },
+  {
+    col: 10,
+    row: 4,
+    slug: 'sis',
+    imagefile: 'prog.png',
+    title: 'PROGRAMMING',
+    description: (
+      <>
+        Student Information <br />
+        System
+      </>
+    ),
+  },
+]
+
+export { BentoList };

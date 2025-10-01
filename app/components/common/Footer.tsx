@@ -22,7 +22,7 @@ function Footer() {
               <div>          
                 <ul className="text-[#1A2B4C] text-base font-bold space-y-0.5">  
                   <li><Link href={"/"}>Home</Link></li>
-                  <li><Link href={"/"}>Projects</Link></li>
+                  <li><Link href={"/projects"}>Projects</Link></li>
                   <li><Link href={"/about"}>About</Link></li>
                   <li><Link href={"/blog"}>Blog</Link></li>
                   <li><Link href={"/contact"}>Contact</Link></li>
@@ -32,10 +32,10 @@ function Footer() {
               <div>
                 <ul className="space-y-0.5 text-base font-semibold"> 
                   <li className="text-[#1A2B4C] font-bold mb-2">Links</li> 
-                  <li className="flex items-center"><FaLinkedin className="text-lg mr-1"/>Linkedin</li>
-                  <li className="flex items-center"><RiTwitterXFill className="text-lg mr-1"/>Twitter</li>
-                  <li className="flex items-center"><FaInstagram className="text-lg mr-1"/>Instagram</li>
-                  <li className="flex items-center"><FaGithub className="text-lg mr-1"/>Github</li>
+                  <li className="flex items-center"><a href="https://www.linkedin.com/in/azis-agantal-35a837212/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A2B4C] transition"><FaLinkedin className="inline-flex text-lg mb-1 mr-1"/>Linkedin</a></li>
+                  <li className="flex items-center"><a href="https://x.com/AgantalAzis" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A2B4C] transition"><RiTwitterXFill className="inline-flex text-lg mb-1 mr-1"/>Twitter</a></li>
+                  <li className="flex items-center"><a href="https://www.instagram.com/zsgntl/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A2B4C] transition"><FaInstagram className="inline-flex text-lg mb-1 mr-1"/>Instagram</a></li>
+                  <li className="flex items-center"><a href="https://github.com/agantal864" target="_blank" rel="noopener noreferrer" className="hover:text-[#1A2B4C] transition"><FaGithub className="inline-flex text-lg mb-1 mr-1"/>Github</a></li>
                 </ul>
               </div>
             </div>            

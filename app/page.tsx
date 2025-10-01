@@ -1,11 +1,12 @@
+import SectionLayout from './components/layout/SectionLayout';
+import Button from './components/ui/button';
+import SplitText from '@/app/components/ui/SplitText';
 import Link from 'next/link';
 import Image from "next/image";
-import { FaArrowRightLong } from "react-icons/fa6";
-import SplitText from '@/components/ui/SplitText';
 
 function HomePage() {
   return (
-    <section id="hero" className="md:max-w-7xl md:mx-auto px-10 md:px-12 lg:px-20 py-4 md:py-8 lg:py-12 xl:py-16">
+    <SectionLayout id="hero">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-around gap-8">
           <div className="w-full lg:w-auto text-center lg:text-left space-y-2 xl:space-y-4">
             <SplitText
@@ -28,22 +29,20 @@ function HomePage() {
               <br className="hidden lg:block xl:block" /> <span className="font-light italic"> creativity.</span> &lt;/&gt;
             </p>
             <Link href="/about">
-              <button className="text-[#1A2B4C] bg-[#FFC107]/40 noise-bg bg-opacity-100 filter brightness-110 font-semibold md:text-base lg:text-base xl:text-2xl px-8 py-4 lg:px-9 lg:py-5 rounded-full hover:bg-[#FFC107] transition">
-                More About Me <FaArrowRightLong className="inline ml-1.5 mb-1"/>
-              </button>
+              <Button type="button" label="More About Me" large={true} icon="goto"/>
             </Link>
-        </div>
-        <div className="w-full md:w-auto">
-          <Image
-            src="/herobg.png"
-            alt="mypic"
-            width={500}
-            height={500}
-            className="mx-auto"
-          />
-        </div>
+          </div>
+          <div className="w-full md:w-auto">
+            <Image
+              src="/herobg.png"
+              alt="mypic"
+              width={500}
+              height={500}
+              className="mx-auto"
+            />
+          </div>
       </div>
-    </section>
+    </SectionLayout>
  )
 } 
 
