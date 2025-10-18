@@ -7,7 +7,7 @@ export interface BlogBoxListProps {
 
 export const BlogBoxList: BlogBoxListProps[] = [
     {   
-        link:"https://sports50.sport.blog/hook-them/",
+        link:"https://azis-agantal-blog.vercel.app/",
         imgFile:"life.jpg",
         imgPos:"bg-right",
         title:"LIFE"

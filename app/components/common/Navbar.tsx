@@ -57,7 +57,7 @@ function Navbar() {
                     key={href}
                     href={href}
                     className={`w-auto md:px-2.5 md:py-1 lg:px-4 lg:py-1 text-[#3D3D3D] ${
-                      isActive ? 'rounded-full font-medium bg-[#FFC107]/40 noise-bg bg-opacity-100 filter brightness-110' : ''}`}>
+                      isActive ? 'rounded-full font-medium bg-[#FFC107]/80 noise-bg bg-opacity-100 filter brightness-110' : ''}`}>
                     {label}
                   </Link>
                  
@@ -95,7 +95,7 @@ function Navbar() {
                       key={href}
                       href={href}
                       className={`w-auto px-4 py-1 text-[#3D3D3D] ${
-                        isActive ? 'rounded-full font-medium bg-[#FFC107]/50 noise-bg bg-opacity-100' : ''
+                        isActive ? 'rounded-full font-medium bg-[#FFC107]/80 noise-bg bg-opacity-100' : ''
                       }`}
                     >
                       {label}

@@ -35,7 +35,7 @@ function Button({type, label, padding_x = "px-8", padding_y = "py-4", large = fa
         <button
         onClick={icon === "mail" ? handleClick : undefined}
         type={type}
-        className={`text-[#1A2B4C] bg-[#FFC107]/40 noise-bg bg-opacity-100 filter brightness-110 font-semibold rounded-full mb-15 hover:bg-[#FFC107] transition text-base cursor-pointer 
+        className={`text-[#1A2B4C] bg-[#FFC107]/80 noise-bg bg-opacity-100 filter brightness-110 font-semibold rounded-full mb-15 hover:bg-[#FFC107] transition text-base cursor-pointer 
             ${padding_x} ${padding_y} ${large ? "xl:text-2xl lg:px-9 lg:py-5" : ""}`}
         >
         {icon === "goto" ? ( <> {label} {iconElement} </> ) : (<> {iconElement} {label} </>)}
