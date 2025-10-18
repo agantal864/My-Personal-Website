@@ -51,7 +51,7 @@ const projects: Record<string, Project> = {
             One of the crucial milestones I undertook is enabling interoperability across protocols through protocol binding, allowing the delivery of shared service functions throughout the system.
           </p>,
           <p className="font-sans text-sm md:text-base lg:text-lg leading-7 md:leading-8 lg:leading-9 pb-6" key="m2m-5">
-            The capstone project's complexity and scope led to support through an R&D grant and an opportunity to present the work internationally.
+            The capstone project&apos;s complexity and scope led to support through an R&D grant and an opportunity to present the work internationally.
           </p>
     ],
         tools: [
@@ -94,7 +94,7 @@ const projects: Record<string, Project> = {
           </p>,
           <p className="font-sans text-sm md:text-base lg:text-lg leading-7 md:leading-8 lg:leading-9 pb-6" key="iot-3">
             <span className="font-bold">Implementation</span> <br />
-            Implemented using an embedded hardware. It is centered around the use of STM32's NUCLEO-F411RE, acting as the base microcontroller.
+            Implemented using an embedded hardware. It is centered around the use of STM32&apos;s NUCLEO-F411RE, acting as the base microcontroller.
             Sensing devices used are high-capacity gyroscopes with an accelerometer, and a motion sensor.
             A custom daughter board was designed and built as an interface for sensors, communication module, and the microcontroller.
           </p>,
