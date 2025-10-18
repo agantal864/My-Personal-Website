@@ -1,6 +1,7 @@
+import { ReactNode } from 'react';
 interface ProjContentProps {
     title: string,
-    paragraphs: string[]
+    paragraphs: ReactNode[]; 
 }
 
 function ProjContent({ title, paragraphs }: ProjContentProps) {
