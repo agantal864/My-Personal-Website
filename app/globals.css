@@ -33,5 +33,11 @@ body {
   }
 }
 
+.glass-container {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(7.5px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
 
 

@@ -33,7 +33,7 @@ export function ToolsItems({items}: ToolsItemsProps) {
         <>
             {items.map((tool, index) => (
                 <div key={index} className="flex flex-col items-center">
-                    <div className="flex items-center justify-center w-[70px] h-[70px] bg-[#f5f5f5] rounded-xl" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>
+                    <div className="glass-container flex items-center justify-center w-[70px] h-[70px] rounded-xl" style={{ boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.25)' }}>
                         <Image
                         src={tool.src}
                         alt={tool.alt}

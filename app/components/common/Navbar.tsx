@@ -60,6 +60,7 @@ function Navbar() {
                       isActive ? 'rounded-full font-medium bg-[#FFC107]/40 noise-bg bg-opacity-100 filter brightness-110' : ''}`}>
                     {label}
                   </Link>
+                 
                 );
               })}
             </div>

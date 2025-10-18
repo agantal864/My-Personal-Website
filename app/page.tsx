@@ -28,7 +28,7 @@ function HomePage() {
               <span className="font-semibold text-[#1A2B4C]"> electrons</span> meet <span className="font-semibold text-[#1A2B4C]">code</span>, and <span className="font-semibold text-[#1A2B4C]">code</span> becomes 
               <br className="hidden lg:block xl:block" /> <span className="font-light italic"> creativity.</span> &lt;/&gt;
             </p>
-            <Link href="/about">
+            <Link href="/about" >
               <Button type="button" label="More About Me" large={true} icon="goto"/>
             </Link>
           </div>

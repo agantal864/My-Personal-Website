@@ -1,5 +1,4 @@
 import { GoArrowUpRight } from "react-icons/go";
-import Link from 'next/link';
 
 interface BoxProps {
     link: string
