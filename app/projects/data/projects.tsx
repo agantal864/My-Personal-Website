@@ -69,7 +69,7 @@ const projects: Record<string, Project> = {
     pid: {
         title: "PID controlled Arduino Robot",
         paragraphs: [
-          <div >
+          <div key="pid-1">
             <p className="font-sans text-sm md:text-base lg:text-lg leading-7 md:leading-8 lg:leading-9 pb-6">
               This project features a robot built using Arduino and fine-tuned with a PID control algorithm to handle real-time sensor feedback.
               It is designed for sumo bot competitions and line path tracking, equipped with stability analysis to reduce overshoot, oscillations,
