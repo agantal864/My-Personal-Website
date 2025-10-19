@@ -69,12 +69,24 @@ const projects: Record<string, Project> = {
     pid: {
         title: "PID controlled Arduino Robot",
         paragraphs: [
-            <p className="font-sans text-sm md:text-base lg:text-lg leading-7 md:leading-8 lg:leading-9 pb-6" key="pid-1">
+          <div >
+            <p className="font-sans text-sm md:text-base lg:text-lg leading-7 md:leading-8 lg:leading-9 pb-6">
               This project features a robot built using Arduino and fine-tuned with a PID control algorithm to handle real-time sensor feedback.
               It is designed for sumo bot competitions and line path tracking, equipped with stability analysis to reduce overshoot, oscillations,
               and steady-state error. With proper tuning, it responds quickly and precisely to changes in its environment. The build showcases hands-on
               robotics, control systems, and smart automation using cheap and accessible components.
             </p>
+            <video
+              controls
+              autoPlay={false}
+              loop={false}
+              muted={false}
+              preload="metadata"
+              className="w-full rounded-lg shadow-md mb-5">
+                <source src="/pidrobot.mp4" type="video/mp4" />
+                  Your browser does not support HTML5 video.
+            </video>
+          </div>
         ],
         tools: [
             { name: "Arduino", src: "/tools/arduino.png", alt: "arduino", width: 50, height: 50, className: "object-fill" },
