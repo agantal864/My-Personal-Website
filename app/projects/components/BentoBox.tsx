@@ -53,7 +53,7 @@ function BentoBox({ col, row, slug, imagefile, title, description }: BentoBoxPro
         );
     } else if (slug === 'lifeblog') {
         linkElement = (
-            <a href="https://github.com/agantal864/Life-Blog"
+            <a href="https://github.com/agantal864/Life-blog-Prod"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute inset-0 z-10"/>
