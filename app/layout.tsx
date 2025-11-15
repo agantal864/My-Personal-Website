@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { Toaster } from 'react-hot-toast';
+import { ThemeProvider} from "next-themes";
 
 import Navbar from '@/app/components/common/Navbar';
 import Footer from '@/app/components/common/Footer';
@@ -65,29 +66,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${butler.variable}`}>
+    <html lang="en" className={`${inter.variable} ${butler.variable}`} suppressHydrationWarning>
       <body className="relative">
         <Toaster position="top-center" />
-        <div className="fixed inset-0 -z-10">
-          <Particles
-            particleColors={['#FFC107/40']}
-            particleCount={200}
-            particleSpread={10}
-            speed={0.2}
-            particleBaseSize={150}
-            moveParticlesOnHover={true}
-            alphaParticles={true}
-            disableRotation={false}
-          />
-        </div>
-         <div className="relative flex flex-col min-h-screen">
-          <Navbar />
-            <main className="flex-grow">
-              {children}
-            </main>
-          <Footer />
-        </div>
-      </body>
+        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+          <div className="fixed inset-0 -z-10">
+            <Particles
+              particleColors={['#FFC107/40']}
+              particleCount={200}
+              particleSpread={10}
+              speed={0.2}
+              particleBaseSize={150}
+              moveParticlesOnHover={true}
+              alphaParticles={true}
+              disableRotation={false}
+            />
+          </div>
+          <div className="relative flex flex-col min-h-screen">
+            <Navbar />
+              <main className="flex-grow">
+                {children}
+              </main>
+            <Footer />
+          </div>
+        </ThemeProvider>
+      </body>  
     </html>
   );
 }
